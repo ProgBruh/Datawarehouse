@@ -1,0 +1,279 @@
+/* Cтили, заданные по умолчанию */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #4b5d68;
+  font-family: "Avenir";
+  font-weight: 500;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: "Avenir";
+  font-weight: 500;
+  color: #4b5d68;
+}
+
+.link--active {
+  color: #212353;
+  font-weight: 900;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+  min-width: 320px;
+}
+
+/* I */
+
+/* // Cтили, заданные по умолчанию */
+.row {
+  display: flex;
+}
+
+.row--column {
+  flex-direction: column;
+}
+
+.row--space-between {
+  justify-content: space-between;
+}
+
+.row--justify-center {
+  justify-content: center;
+}
+
+.row--align-center {
+  align-items: center;
+}
+
+.col {
+  width: 50%;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-family: "Helvetica";
+  font-size: 80px;
+  font-weight: 700;
+  color: #212353;
+}
+
+.text {
+  font-size: 18px;
+  letter-spacing: 0.6px;
+}
+
+.rel {
+  position: relative;
+}
+
+/* header */
+.header {
+  position: relative;
+  margin-bottom: 99px;
+  padding-top: 62px;
+  padding-bottom: 100px;
+}
+
+.logo {
+  position: relative;
+  width: 49px;
+  height: 35px;
+}
+
+.logo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9c69e2;
+  z-index: 1;
+}
+
+.logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #f063b8;
+  z-index: 1;
+}
+
+.header__logo {
+  margin-right: 121px;
+}
+
+.header__nav {
+  margin-bottom: 143px;
+}
+
+.nav__link {
+  margin-right: 40px;
+}
+
+.nav__link:last-child {
+  margin-right: 0;
+}
+
+.header__content {
+  position: relative;
+  max-width: 645px;
+}
+
+.header__text {
+  margin-bottom: 50px;
+  width: 59%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 16px 37px;
+  border-radius: 50px;
+  background-color: #9c69e2;
+  font-family: "Avenir";
+  font-weight: 900;
+  color: #fff;
+}
+
+.header__img-wrapper {
+  position: absolute;
+  bottom: -115px;
+  left: 60%;
+  width: 885px;
+  z-index: -1;
+}
+
+/* // header */
+
+/* main */
+.main__article {
+  margin-bottom: 150px;
+  padding: 32px 93px 32px 16px;
+  border-radius: 50px;
+  background: #f063b826;
+}
+
+.article__title {
+  margin-bottom: 40px;
+}
+
+.title--sub {
+  font-size: 40px;
+}
+
+.title--under {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.main__title {
+  margin-bottom: 50px;
+}
+
+.section__desc {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 56%;
+  text-align: center;
+}
+
+.item {
+  position: relative;
+  padding: 49px 50px 33px 0;
+  width: 270px;
+  height: 358px;
+  border-top-right-radius: 50px;
+  border-radius: 0 50px 50px 0;
+}
+
+.item--green-light {
+  background-color: #f0faf9;
+}
+
+.item--purple-light {
+  background-color: #f6f0fd;
+}
+
+.item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-80%) skew(-10deg, 0);
+  transform-origin: right;
+  height: 100%;
+  width: 172px;
+  border-radius: 50px 0 0 50px;
+  background-color: inherit;
+  z-index: -1;
+}
+
+.item__text {
+  margin-bottom: 20px;
+}
+
+.item__link {
+  margin-right: 20px;
+}
+
+/* // main */
