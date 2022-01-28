@@ -23,6 +23,7 @@ a {
   font-family: "Avenir";
   font-weight: 500;
   color: #4b5d68;
+  font-size: 1rem;
 }
 
 .link--active {
@@ -34,6 +35,16 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img--full-width {
+  width: 100%;
 }
 
 h1,
@@ -66,8 +77,9 @@ button:active {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 70rem;
   min-width: 320px;
 }
 
@@ -98,17 +110,26 @@ button:active {
   width: 50%;
 }
 
+.col--gap {
+  width: 47%;
+}
+
 .title {
   margin-bottom: 40px;
   font-family: "Helvetica";
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
   color: #212353;
 }
 
 .text {
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: 0.6px;
+  line-height: 1.8rem;
+}
+
+.text--white {
+  color: #fff;
 }
 
 .rel {
@@ -118,9 +139,9 @@ button:active {
 /* header */
 .header {
   position: relative;
-  margin-bottom: 99px;
-  padding-top: 62px;
-  padding-bottom: 100px;
+  margin-bottom: 6.19rem;
+  padding-top: 3.875rem;
+  padding-bottom: 6.25rem;
 }
 
 .logo {
@@ -173,7 +194,7 @@ button:active {
 
 .header__content {
   position: relative;
-  max-width: 645px;
+  max-width: 58%;
 }
 
 .header__text {
@@ -186,25 +207,31 @@ button:active {
   justify-content: center;
   align-items: center;
   width: fit-content;
-  padding: 16px 37px;
+  padding: 1rem 2.31rem;
   border-radius: 50px;
   background-color: #9c69e2;
   font-family: "Avenir";
+  font-size: 1.125rem;
   font-weight: 900;
   color: #fff;
 }
 
 .header__img-wrapper {
   position: absolute;
-  bottom: -115px;
-  left: 60%;
-  width: 885px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-21%, -10%);
+  width: 79%;
   z-index: -1;
 }
 
 /* // header */
 
 /* main */
+.main__section {
+  margin-bottom: 9.375rem;
+}
+
 .main__article {
   margin-bottom: 150px;
   padding: 32px 93px 32px 16px;
@@ -217,12 +244,12 @@ button:active {
 }
 
 .title--sub {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .title--under {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .main__title {
@@ -236,11 +263,38 @@ button:active {
   text-align: center;
 }
 
+.article__items {
+  margin-bottom: 50px;
+}
+
+.article__items:last-child {
+  margin-bottom: 0;
+}
+
 .item {
   position: relative;
-  padding: 49px 50px 33px 0;
-  width: 270px;
-  height: 358px;
+  padding-top: 67.42%;
+}
+
+.item::before {
+  display: block; /* отображать элемент как блок */
+  content: ""; /* содержимое псевдоэлемента */
+  width: 100%; /* ширина элемента */
+}
+
+/* Для расчёта высоты карточки относительно ширины */
+.height-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.item__content {
+  position: relative;
+  padding: 49px 62px 33px 0;
+  height: 100%;
   border-top-right-radius: 50px;
   border-radius: 0 50px 50px 0;
 }
@@ -249,20 +303,54 @@ button:active {
   background-color: #f0faf9;
 }
 
+.item--green-light::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -121%);
+  width: 75%;
+  height: 38%;
+  background: url(../img/main/items/curve.png) no-repeat center/contain,
+    url(../img/main/items/ellipse.png) no-repeat 41% 21%/18%;
+}
+
 .item--purple-light {
   background-color: #f6f0fd;
 }
 
-.item::before {
+.item--purple-light::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-51%, -18%) scale(-1, -1);
+  width: 75%;
+  height: 40%;
+  background: url(../img/main/items/curve.png) no-repeat center/contain;
+}
+
+.item--pink-light {
+  background-color: #fef0f8;
+}
+
+.item--blue-light {
+  background-color: #eaf6fc;
+}
+
+/* Скошенная левая сторона карточки */
+.item__content::before {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-80%) skew(-10deg, 0);
+  transform: translateX(-35%) skew(-10deg, 0);
   transform-origin: right;
   height: 100%;
-  width: 172px;
+  width: 100%;
   border-radius: 50px 0 0 50px;
   background-color: inherit;
   z-index: -1;
@@ -270,10 +358,28 @@ button:active {
 
 .item__text {
   margin-bottom: 20px;
+  font-size: 1rem;
+  letter-spacing: -0.2px;
+  line-height: 1.6rem;
 }
 
 .item__link {
   margin-right: 20px;
 }
+
+.item__img-wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Slider */
+.slider {
+  padding: 109px 93px 60px;
+  background-color: #9c69e2;
+  border-radius: 50px;
+}
+/* //Slider */
 
 /* // main */
