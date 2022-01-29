@@ -754,3 +754,107 @@ button:active {
 /* //Slider */
 
 /* // main */
+
+/* footer */
+.footer {
+  padding: 50px 0 25px 0;
+
+  color: #212353;
+  line-height: 1.8rem;
+  border-top: #9b69e233 solid 2px;
+}
+
+@media (min-width: 40rem) {
+  .footer__row {
+    padding: 123.7px 0 63px 0;
+  }
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40rem) {
+  .footer__row {
+    flex-direction: row;
+  }
+}
+
+.footer__col {
+  width: 100%;
+}
+
+@media (min-width: 40rem) {
+  .footer__col {
+    width: 50%;
+  }
+}
+
+.footer__logo-link {
+  margin-bottom: 4rem;
+  font-weight: 900;
+  color: #212353;
+}
+
+.footer__logo {
+  margin-right: 20px;
+}
+
+.footer__text {
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+}
+
+.footer__text:last-child {
+  margin-bottom: 2.25rem;
+}
+
+.footer__link {
+  font-family: "AvenirBook";
+  color: #212353;
+}
+
+.footer__copyright {
+  font-family: "AvenirBook";
+}
+
+.footer__copyrigh-text {
+  font-size: 0.75rem;
+  line-height: 1.35rem;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2.25rem;
+}
+
+@media (min-width: 40rem) {
+  .footer__social {
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+}
+
+.social-ico {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(33, 35, 83, 0.1);
+}
+
+.footer__social-ico {
+  margin-right: 14px;
+}
+
+.footer__social-ico:last-child {
+  margin-right: 0;
+}
+
+.footer__social-title {
+  margin-bottom: 1.84rem;
+}
+
+/* // footer */
