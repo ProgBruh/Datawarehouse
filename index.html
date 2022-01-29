@@ -4,23 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Data Warehouse is a data storage area that has been
+    tested for security, so you can store your data here
+    safely but not be afraid of being stolen by others."
+    />
+    <meta
+      name="Keywords"
+      content="warehouse, save, data, security, storage, area"
+    />
+
+    <!-- локализация сайта, для англоязычного сайта en_EN -->
+    <meta property="og:locale" content="en_EN" />
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article" />
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content="Warehouse" />
+    <!-- описание страницы -->
+    <meta
+      property="og:description"
+      content="Warehouse - Save your data storage here."
+    />
+    <!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta
+      property="og:image"
+      content="https://dmitriy-kudlovich.github.io/Datawarehouse/img/header/header-img.png"
+    />
+    <!-- ссылка на текущую страницу -->
+    <meta
+      property="og:url"
+      content="https://dmitriy-kudlovich.github.io/Datawarehouse/"
+    />
+    <!-- название сайта -->
+    <meta property="og:site_name" content="Warehouse" />
     <title>Warehouse - Save your data storage here.</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container">
+        <!-- Navigation -->
         <nav class="header__nav">
           <a href="index.html" class="logo header__logo"></a>
           <div class="row nav__links">
-            <a href="#!" class="link nav__link link--active">About</a>
-            <a href="#!" class="link nav__link">Help</a>
-            <a href="#!" class="link nav__link">Features</a>
+            <a href="#about" class="link nav__link link--active">About</a>
+            <a href="#footer" class="link nav__link">Help</a>
+            <a href="#features" class="link nav__link">Features</a>
           </div>
           <button class="hamburger"></button>
         </nav>
+        <!-- // Navigation -->
 
+        <!-- Header text -->
         <div class="header__content">
           <h1 class="title header__title">Save your data storage here.</h1>
           <div class="text header__text">
@@ -32,7 +71,9 @@
             >Learn more</a
           >
         </div>
+        <!-- // Header text -->
 
+        <!-- Header image -->
         <div class="img-wrapper header__img-wrapper">
           <img
             src="./img/header/header-img.png"
@@ -40,11 +81,12 @@
             class="img--full-width"
           />
         </div>
+        <!-- // Header image -->
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <article class="article main__article" id="features">
+        <article class="article main__article" id="about">
           <div class="row row--adaptive row--align-center row--space-between">
             <div class="col col--adaptive col--gap">
               <div class="img-wrapper article__img-wrapper">
@@ -67,7 +109,7 @@
         </article>
 
         <section class="main__section">
-          <div class="section__desc">
+          <div class="section__desc" id="features">
             <h2 class="title main__title title--sub">Features</h2>
             <p class="text">
               Some of the features and advantages that we provide for those of
@@ -271,7 +313,7 @@
         </section>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__row">
           <div class="footer__col">
