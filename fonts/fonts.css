@@ -4,9 +4,9 @@
 
 @font-face {
   font-family: "AvenirBook";
-  src: local("Avenir"), url("../avenir/Avenir-Book.ttf") format("truetype"),
-    url("../avenir/Avenir-Book.eot?#iefix") format("embedded-opentype"),
-    url("../avenir/Avenir-Book.woff") format("woff");
+  src: local("Avenir"), url("./avenir/Avenir-Book.ttf") format("truetype"),
+    url("./avenir/Avenir-Book.eot?#iefix") format("embedded-opentype"),
+    url("./avenir/Avenir-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,9 +15,9 @@
 
 @font-face {
   font-family: "Avenir";
-  src: local("Avenir"), url("../avenir/Avenir-Heavy.ttf") format("truetype"),
-    url("../avenir/Avenir-Heavy.eot?#iefix") format("embedded-opentype"),
-    url("../avenir/Avenir-Heavy.woff") format("woff");
+  src: local("Avenir"), url("./avenir/Avenir-Heavy.ttf") format("truetype"),
+    url("./avenir/Avenir-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("./avenir/Avenir-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
@@ -26,9 +26,9 @@
 
 @font-face {
   font-family: "AvenirRoman";
-  src: local("Avenir"), url("../avenir/Avenir-Roman.ttf") format("truetype"),
-    url("../avenir/Avenir-Roman.eot?#iefix") format("embedded-opentype"),
-    url("../avenir/Avenir-Roman.woff") format("woff");
+  src: local("Avenir"), url("../fonts/avenir/Avenir-Roman.ttf") format("truetype"),
+    url("./avenir/Avenir-Roman.eot?#iefix") format("embedded-opentype"),
+    url("./avenir/Avenir-Roman.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,8 +38,8 @@
 @font-face {
   font-family: "Avenir";
   src: local("Avenir"), url("../avenir/Avenir-Medium.ttf") format("truetype"),
-    url("../avenir/Avenir-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../avenir/Avenir-Medium.woff") format("woff");
+    url("./avenir/Avenir-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./avenir/Avenir-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -51,11 +51,11 @@
 /* font-family: "HelveticaBold"; */
 @font-face {
   font-family: "Helvetica";
-  src: url("../Helvetica/HelveticaBold/HelveticaBold.eot");
-  src: url("../Helvetica/HelveticaBold/HelveticaBold.eot?#iefix")
+  src: url("./Helvetica/HelveticaBold/HelveticaBold.eot");
+  src: url("./Helvetica/HelveticaBold/HelveticaBold.eot?#iefix")
       format("embedded-opentype"),
-    url("../Helvetica/HelveticaBold/HelveticaBold.woff") format("woff"),
-    url("../Helvetica/HelveticaBold/HelveticaBold.ttf") format("truetype");
+    url("./Helvetica/HelveticaBold/HelveticaBold.woff") format("woff"),
+    url("./Helvetica/HelveticaBold/HelveticaBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
@@ -63,11 +63,11 @@
 /* font-family: "HelveticaRegular"; */
 @font-face {
   font-family: "Helvetica";
-  src: url("../Helvetica/HelveticaRegular/HelveticaRegular.eot");
-  src: url("../Helvetica/HelveticaRegular/HelveticaRegular.eot?#iefix")
+  src: url("./Helvetica/HelveticaRegular/HelveticaRegular.eot");
+  src: url("./Helvetica/HelveticaRegular/HelveticaRegular.eot?#iefix")
       format("embedded-opentype"),
-    url("../Helvetica/HelveticaRegular/HelveticaRegular.woff") format("woff"),
-    url("../Helvetica/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    url("./Helvetica/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("./Helvetica/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }

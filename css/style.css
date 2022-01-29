@@ -106,6 +106,10 @@ button:active {
   align-items: center;
 }
 
+.row--align-start {
+  align-items: flex-start;
+}
+
 .col {
   width: 50%;
 }
@@ -115,11 +119,14 @@ button:active {
 }
 
 .title {
-  margin-bottom: 40px;
   font-family: "Helvetica";
   font-size: 5rem;
   font-weight: 700;
   color: #212353;
+}
+
+.header__title {
+  margin-bottom: 3.125rem;
 }
 
 .text {
@@ -198,7 +205,7 @@ button:active {
 }
 
 .header__text {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   width: 59%;
 }
 
@@ -272,28 +279,12 @@ button:active {
 }
 
 .item {
-  position: relative;
-  padding-top: 67.42%;
-}
-
-.item::before {
-  display: block; /* отображать элемент как блок */
-  content: ""; /* содержимое псевдоэлемента */
-  width: 100%; /* ширина элемента */
-}
-
-/* Для расчёта высоты карточки относительно ширины */
-.height-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: flex;
 }
 
 .item__content {
   position: relative;
-  padding: 49px 62px 33px 0;
+  padding: 55px 62px 40px 0;
   height: 100%;
   border-top-right-radius: 50px;
   border-radius: 0 50px 50px 0;
@@ -380,6 +371,54 @@ button:active {
   background-color: #9c69e2;
   border-radius: 50px;
 }
+
+.slider__title {
+  margin-bottom: 5.5rem;
+}
+
+.slider__item {
+  padding: 60px 70px 50px;
+  width: 69%;
+  background: #ffffff;
+  box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+  border-radius: 20px;
+}
+
+.slider__img-wrapper {
+  margin-right: 30px;
+  width: 18%;
+  border-radius: 50%;
+}
+
+.slider__img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider__desc {
+  width: 76.24%;
+}
+
+.slider__item-title {
+  margin-bottom: 1.1875rem;
+}
+
+.slider__name {
+  font-weight: 900;
+  color: #212353;
+}
+
+.slider__link {
+  font-size: 0.875rem;
+  color: #9c69e2;
+}
+
+.slider__text {
+  font-size: 1.125rem;
+  font-family: "AvenirRoman";
+  line-height: 2.025rem;
+}
+
 /* //Slider */
 
 /* // main */
