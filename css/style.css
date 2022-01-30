@@ -19,7 +19,8 @@ body {
 }
 
 body {
-  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%) no-repeat top center;
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%) no-repeat top
+    center;
 }
 
 a {
@@ -610,7 +611,15 @@ button:active {
   top: 0;
   left: 0;
   transform: translateX(-35%) skew(-10deg, 0);
+  /* Для IE */
+  -moz-transform: translateX(-35%) skew(-10deg, 0);
+  -webkit-transfrom: translateX(-35%) skew(-10deg, 0);
+  -sand-transform: translateX(-35%) skew(-10deg, 0);
+  -o-transform: translateX(-35%) skew(-10deg, 0);
   transform-origin: right;
+  -webkit-transfrom-origin: right;
+  -sand-transform-origin: right;
+  -o-transform-origin: right;
   height: 100%;
   width: 100%;
   border-radius: 50px 0 0 50px;
