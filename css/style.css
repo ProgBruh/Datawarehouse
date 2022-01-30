@@ -87,6 +87,12 @@ button:active {
   min-width: 20rem;
 }
 
+@media (min-width: 40rem) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
 @media (min-width: 70rem) {
   .container {
     padding: 0;
@@ -512,8 +518,44 @@ button:active {
   background-color: #fef0f8;
 }
 
+.item--pink-light::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 25%;
+  height: 15%;
+  transform: scalex(-1) rotate(10deg);
+  background: url(../img/main/items/ellipse.png) no-repeat 5% 5%/100%;
+}
+
 .item--blue-light {
   background-color: #eaf6fc;
+}
+
+.item--blue-light::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6%;
+  left: -33%;
+  width: 98%;
+  height: 62%;
+  transform: rotate(114deg);
+  background: url(../img/main/items/curve.png) no-repeat center / contain;
+}
+
+.item--ellipsep-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 11%;
+  right: 3%;
+  width: 19%;
+  height: 16%;
+  background: url(../img/main/items/ellipse.png) no-repeat center / contain;
+  z-index: 2;
 }
 
 /* Скошенная левая сторона карточки */
@@ -553,6 +595,7 @@ button:active {
   top: 50%;
   left: 50%;
   transform: translate(-105%, -50%);
+  z-index: 2;
 }
 
 @media (min-width: 70rem) {
@@ -765,7 +808,7 @@ button:active {
 }
 
 @media (min-width: 40rem) {
-  .footer__row {
+  .footer {
     padding: 123.7px 0 63px 0;
   }
 }
