@@ -18,6 +18,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%) no-repeat top center;
+}
+
 a {
   display: block;
   text-decoration: none;
