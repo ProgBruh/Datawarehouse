@@ -496,6 +496,7 @@ button:active {
   height: 38%;
   background: url(../img/main/items/curve.png) no-repeat center/contain,
     url(../img/main/items/ellipse.png) no-repeat 41% 21%/18%;
+  pointer-events: none;
 }
 
 .item--purple-light {
@@ -512,6 +513,7 @@ button:active {
   width: 75%;
   height: 40%;
   background: url(../img/main/items/curve.png) no-repeat center/contain;
+  pointer-events: none;
 }
 
 .item--pink-light {
@@ -528,6 +530,7 @@ button:active {
   height: 15%;
   transform: scalex(-1) rotate(10deg);
   background: url(../img/main/items/ellipse.png) no-repeat 5% 5%/100%;
+  pointer-events: none;
 }
 
 .item--blue-light {
@@ -544,6 +547,7 @@ button:active {
   height: 62%;
   transform: rotate(114deg);
   background: url(../img/main/items/curve.png) no-repeat center / contain;
+  pointer-events: none;
 }
 
 .item--ellipsep-bg::before {
@@ -555,6 +559,7 @@ button:active {
   width: 19%;
   height: 16%;
   background: url(../img/main/items/ellipse.png) no-repeat center / contain;
+  pointer-events: none;
   z-index: 2;
 }
 
