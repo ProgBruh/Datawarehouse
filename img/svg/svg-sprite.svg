@@ -5,4 +5,11 @@
             <path d="M21.2852 8.00098H1.28516"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </g>
     </symbol>
+
+    <symbol viewBox="0 0 42 16" id="arrowActive">
+        <g>
+            <path d="M7 1L1 8L7 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/> 
+            <path d="M0.999998 8L41 8"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </symbol>
 </svg>

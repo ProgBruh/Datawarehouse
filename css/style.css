@@ -784,9 +784,8 @@ button:active {
   background-color: transparent;
 }
 
-.slider__arrow--prev {
+.button__arrow--prev {
   margin-right: 20px;
-  transform: scale(-1);
 }
 
 .slider__arrow--active {
