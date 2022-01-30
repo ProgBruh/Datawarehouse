@@ -27,9 +27,29 @@ a {
   font-size: 1rem;
 }
 
+.link--underline {
+  position: relative;
+}
+
 .link--active {
   color: #212353;
   font-weight: 900;
+}
+
+.link--underline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #4b5d68;
+  transition: width 0.2s;
+}
+
+.link--underline:hover::before {
+  width: 100%;
 }
 
 img {
@@ -196,7 +216,7 @@ button:active {
   margin-bottom: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media (min-width: 48rem) {
@@ -221,9 +241,10 @@ button:active {
   bottom: 0;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 20px;
   background-color: #9c69e2;
   z-index: 1;
+  transition: width 0.2s, height 0.2s;
 }
 
 .logo::after {
@@ -237,6 +258,15 @@ button:active {
   border-radius: 20px;
   background-color: #f063b8;
   z-index: 1;
+  transition: width 0.2s, height 0.2s;
+}
+
+.logo:hover::before {
+  height: 35px;
+}
+
+.logo:hover::after {
+  height: 20px;
 }
 
 @media (min-width: 48rem) {
@@ -311,6 +341,11 @@ button:active {
   font-size: 1.125rem;
   font-weight: 900;
   color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+
+.button__link:hover {
+  background-color: #8955d3;
 }
 
 .header__button {
@@ -844,6 +879,14 @@ button:active {
   color: #212353;
 }
 
+.footer__logo-link:hover .logo::before {
+  height: 35px;
+}
+
+.footer__logo-link:hover .logo::after {
+  height: 20px;
+}
+
 .footer__logo {
   margin-right: 20px;
 }
@@ -858,6 +901,7 @@ button:active {
 }
 
 .footer__link {
+  width: fit-content;
   font-family: "AvenirBook";
   color: #212353;
 }
